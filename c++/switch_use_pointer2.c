@@ -1,9 +1,9 @@
 //----------switch_two_number----------//
-//-------------2020.12.14--------------//
+//-------------2020.03.27--------------//
 
 #include<stdio.h>
 
-int swap(int x,int y);
+void swap(int x,int y);
 	
 	int a;
 	int b;
@@ -20,22 +20,20 @@ int main()
 
 }
 
-int swap(int x,int y)
+void swap(int x,int y)
 {
-	int temp;
+	int *temp;
 
-	temp=x;
+	temp=&x;
 
-	x=y;
+	&x=&y;//wrong $ can only live on the right
 
-	y=temp;
+	&y=temp;//wrong & can only live on the right 
 	
 	printf("a in swap is %d\n",x);
-	printf("b in swap is %d\n",y);
-
-	return x ;
-	return y ;
+	printf("b in swao is %d\n",y);
 }
+
 
 
 

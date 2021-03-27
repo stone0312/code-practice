@@ -22,16 +22,19 @@ int main()
 
 void swap(int *x,int *y)
 {
-	int temp;
+	//int temp;
+	int *temp; //int *temp=x;
+	//temp=*x;
+	*temp= *x;
+	x=y;
+	y=temp;
 
-	temp=*x;
+	//*x=*y;
 
-	*x=*y;
-
-	*y=temp;
+	//*y=temp;
 	
-	printf("a is %d\n",*x);
-	printf("b is %d\n",*y);
+	printf("a in swap is %d\n",*x);
+	printf("b in swap is %d\n",*y);
 }
 
 

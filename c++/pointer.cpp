@@ -16,6 +16,7 @@ int main()
 	cout << "velue of the n is " << n << endl;
 
 	cout << "address of the n is " << n_address << endl;
+	cout << "address of the n is " << &n_address << endl;
 
 return 0;
 }
