@@ -5,13 +5,13 @@
 
 void swap(int *x,int *y);
 	
-	int a;
-	int b;
+//	int a;
+//	int b;
 
 int main()
 {
-	a=1;
-	b=2;
+	int	a=1;
+	int	b=2;
 	printf("a is %d\n",a);
 	printf("b is %d\n",b);
 	swap(&a,&b);

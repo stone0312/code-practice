@@ -8,13 +8,13 @@ using namespace std;
 
 void swap(int &x,int &y);
 	
-	int a;
-	int b;
+//	int a;
+//	int b;
 
 int main()
 {
-	a=1;
-	b=2;
+	int	a=1;
+	int	b=2;
 	std::cout << "before exchange,a:" << a <<std::endl;
 	std::cout << "before exchange,b:" << b <<std::endl;
 	swap(a,b);
@@ -33,8 +33,8 @@ void swap(int &x,int &y)
 
 	y=temp;
 	
-	std::cout << "in swap ,a:" << a <<std::endl;
-	std::cout << "in swap ,b:" << b <<std::endl;
+	std::cout << "in swap ,a:" << x <<std::endl;
+	std::cout << "in swap ,b:" << y <<std::endl;
 }
 
 
