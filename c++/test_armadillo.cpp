@@ -19,6 +19,7 @@ int main(int argc, char** argv)
  
  
 	A(1, 2) = 456.0;  // directly access an element (indexing starts at 0)
+	A(0, 0) = 888.8;
 	A.print("A:");
  
 	A = 5.0;         // scalars are treated as a 1x1 matrix
