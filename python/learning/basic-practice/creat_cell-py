@@ -1,0 +1,14 @@
+#!/user/bin/env python3
+import numpy as np
+
+npose = 5
+nsmile = 2
+
+poseSmile_cell = np.empty((npose,nsmile),dtype=object) #object is vip
+
+for i in range(5):
+    for k in range(2):
+        poseSmile_cell[i,k] = np.zeros((4,4))
+
+print(poseSmile_cell.shape)
+print (poseSmile_cell[1,1].shape)
